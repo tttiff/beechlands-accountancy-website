@@ -1,0 +1,56 @@
+.tab-content  {
+  padding: 0 20%;
+  margin-bottom: 100px;
+}
+
+
+.tab-content  {
+  padding: 0 20%;
+  margin-top: 40px;
+  color: $darkgrey;
+  height: 100%;
+  margin-bottom: 70px;
+}
+
+.tab-content p {
+    display:relative;
+    margin: 20px 90px;
+    color: $darkgrey;
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+.tab-content {
+    padding: 20px 5px;
+  }
+}
+
+  @media only screen and (max-width: 600px) {
+.tab-content p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.wrapper{
+  text-align:center;
+  margin: 0 ;
+  margin-bottom: 30px;
+  padding: 0 ;
+  position:relative;
+  bottom: 30px;
+}
+
+#downloads ul {
+  list-style: none;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.tab a {
+  color: $fawn;
+}

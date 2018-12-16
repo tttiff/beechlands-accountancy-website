@@ -1,0 +1,10 @@
+.banner-flex {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to bottom, rgba(69, 54, 122, 0.1)), image-url('accounting_3.jpg') no-repeat;
+  opacity: 0.8;
+  margin-top: -100px;
+
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+}

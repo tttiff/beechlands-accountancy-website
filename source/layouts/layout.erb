@@ -5,6 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title %></title>
     <%= stylesheet_link_tag "application" %>
@@ -12,6 +13,9 @@
     <%= favicon_tag 'images/favicon.png' %>
   </head>
   <body>
-    <%= yield %>
+      <!-- layouts/layout.erb -->
+    <%= partial "layouts/_logo" %>   <!-- inject layouts/_navbar.html.erb -->
+    <%= yield %>                      <!-- Page content is injected here -->
+    <%= partial "layouts/_footer" %>   <!-- inject layouts/_footer.html.erb -->
   </body>
 </html>

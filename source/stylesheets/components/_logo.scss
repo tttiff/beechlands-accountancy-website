@@ -1,0 +1,13 @@
+.logo-flex {
+    // for only one item
+    justify-content: space-around;
+    align-items: centre !important;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+  }
+
+.logo-home {
+  height: 80px;
+  margin: 20px 0px;
+}

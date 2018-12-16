@@ -1,15 +1,295 @@
----
-title: Le Wagon - Middleman
----
+<!-- flexbox containing the banner -->
+<div class= "page-wrap">
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
+
+<div class="flex-container banner-flex">
+  <div class="banner-image">
+  </div>
+</div>
+
+<!-- flexbox for the nav bar -->
+
+<div class="flex-box-nav-bar">
+    <nav class="tabs">
+      <div class="selector"></div>
+      <a class="tablink active" onclick="openTab('about')">ABOUT</a>
+      <a class="tablink" onclick="openTab('services')"></i>SERVICES</a>
+      <a class="tablink" onclick="openTab('leadership')"></i>LEADERSHIP</a>
+      <a class="tablink" onclick="openTab('downloads')"></i>DOWNLOADS</a>
+    </nav>
+</div>
+
+<!-- flexbox containing footer  -->
+
+<div class="tab-content">
+  <div id="about" class="tab">
     <p>
-      Middleman is now running!
+      Founded in 1983, Beechlands commenced trading in Bromley, Kent. Subsequently, the practice has opened further offices in Sidcup, Heathfield, Eastbourne, Bath and now Notting Hill, in west London. The head office is now based in Bath.
+      <br><br>
+      The Head of the practice Paul J. Charles who is a member of the Association of Accounting Technicians.
+      <br><br>
+      Over the past twenty years, Beechlands has kept abreast of new technologies and office procedures. We use Sage software which supports our business environment.
+      <br><br>
+      The Sage products we use range from Sage line 50, to Sage taxation products covering Personal, Business, Corporation and payroll taxes.<br><br>
+
+      Two years ago we invested in Sage Company Secretarial software which allows us to gain access to Companies House thus enabling us to file documents on-line at a push of a button.<br><br>
+
+      We have also invested resources in a Company and Credit checking data base where we can monitor businesses and check our clients' credit ratings which has been extremely useful.<br><br>
+
+      Additionally, we use a fully-functional back-up service, “Safe Data Storage”. This allows our data to be backed-up every night and stored in three secure data centres around the globe; we can access this data remotely from anywhere, a beach in Cannes or a cafe in Chelsea.<br><br>
+
+      Two year’s ago we worked alongside Comtecs Ltd to construct and design an on-line data base so as to be able to access all clients' data from anywhere in the world at the push of a button.<br><br>
+
+      At Beechlands we can proudly say that we are taking full advantage of cloud computing and are always looking at new projects.<br><br>
+
+      Our offices are paperless and not cluttered with bulky filing cabinets.
     </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
+  </div>
+
+  <div id="services" class="tab" style="display:none">
+    <p>
+      The practice offers a wide range of accountancy and financial services, as listed below: <br><br>
+      <ul>
+        <li>Accountants Preparation for Sole Traders, Partnerships, Limited Liability Partnerships, Limited Companies.</li>
+        <li>Taxation return Services for Directors, Private clients, Trusts.</li>
+        <li>Taxation enquires.</li>
+        <li>Value added tax return services, assistance with Vat registration issues, and advising on de registration.</li>
+        <li>Independent Examiners for Charities.</li>
+        <li>Experts in Free Agent and Zero Accountancy Software Solutions</li>
+        <li>Payroll preparation-both Monthly and weekly.</li>
+        <li>Business planning, financial forecasts, management accounts review,</li>
+        <li>Company secretarial procedures and the formation of Limited Companies.</li>
+        <li>Submission of CIS forms on line on a monthly basis.</li>
+        <li>Business valuation and business disputes.</li>
+      </ul>
+      <br>
+      We also recommend the use of Receipt Bank for storing and tracking receipts and expenses
+      Our offices are paperless and not cluttered with bulky filing cabinets.
+    </p>
+  </div>
+
+  <div id="leadership" class="tab" style="display:none">
+      <p>
+
+      </p>
+  </div>
+
+  <div id="downloads" class="tab" style="display:none">
+    <p>
+      <ul>
+        <p><a title="http://www.adobe.com/products/acrobat/readstep2.html" href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank"  >Download Acrobat Reader</a> : To view these forms you need Adobe Acrobat Reader installed on your PC. You can install this for free by clicking on this link .</p>
+
+        <div class="center">
+
+          <p><a title="http://beechlandsaccountancyservices.co.uk/download/Accounting_Procedure_List.doc" href="http://beechlandsaccountancyservices.co.uk/download/Accounting_Procedure_List.doc"target="_blank" > Beechlands Accounting Procedure List</a></p>
+
+
+          <p><a title="http://beechlandsaccountancyservices.co.uk/download/Accounting_Procedure_List.doc" href="http://beechlandsaccountancyservices.co.uk/Beechlands/Media/BeechlandsTaxRates.pdf"target="_blank" >Beechlands Tax Rates</a></p>
+
+          <p><a title="http://beechlandsaccountancyservices.co.uk/download/paye_review.pdf" href="http://beechlandsaccountancyservices.co.uk/download/paye_review.pdf"target="_blank" > PAYE Review</a></p>
+
+        </div>
+
+        <li><a title="http://www.hmrc.gov.uk/forms/64-8.pdf" href="http://www.hmrc.gov.uk/forms/64-8.pdf" target="_blank" >64-8</a> : Authorising your agent.</li>
+
+
+        <li><a title="http://www.hmrc.gov.uk/forms/cwf1.pdf" href="http://www.hmrc.gov.uk/forms/cwf1.pdf"target="_blank"  >CWF1</a> : Becoming self employed and registering for National Insurance contributions and/or tax.</li>
+
+        <li><a title="http://www.hmrc.gov.uk/forms/ch2-online.pdf" href="http://www.hmrc.gov.uk/forms/ch2-online.pdf" target="_blank" >CH2</a> : Child benefit claim form.</li>
+
+        <li><a title="http://www.hmrc.gov.uk/forms/p11db.pdf" href="http://www.hmrc.gov.uk/forms/p11db.pdf" target="_blank" >P11D(b)</a> : Return of class 1a national insurance contributions due.</li>
+
+        <li><a title="http://www.hmrc.gov.uk/forms/p11dx.pdf" href="http://www.hmrc.gov.uk/forms/p11dx.pdf" target="_blank" >P11DX</a> : Dispensation for expenses payments and benefits in kind.</li>
+
+        <li><a title="http://www.hmrc.gov.uk/forms/p38s.pdf" href="http://www.hmrc.gov.uk/forms/p38s.pdf" target="_blank" >P38s</a> : Student employees.</li>
+
+        <li><a title="http://www.hmrc.gov.uk/forms/p46.pdf" href="http://www.hmrc.gov.uk/forms/p46.pdf" target="_blank" >P46</a> : Notice of new employee.</li>
+
+        <li><a title="http://www.hmrc.gov.uk/forms/p46car.pdf" href="http://www.hmrc.gov.uk/forms/p46car.pdf" target="_blank" >P46: Car</a> : Car provided for the private use of an employee or director.</li>
+
+        <li><a title="http://www.hmrc.gov.uk//ctsa/ct41g-08-05.pdf" href="http://www.hmrc.gov.uk//ctsa/ct41g-08-05.pdf" target="_blank" >CT41G (New Company)</a> : Corporation Tax - New Company Details.</li>
+
+        <li><a title="http://www.hmrc.gov.uk/pdfs/ct41g.pdf" href="http://www.hmrc.gov.uk/pdfs/ct41g.pdf" target="_blank" >CT41G (Clubs)</a> : Corporation tax - details of clubs, societies, voluntary associations and other similar bodies.</li>
+
+        <li><a title="http://customs.hmrc.gov.uk/channelsPortalWebApp/channelsPortalWebApp.portal?_nfpb=true&amp;_pageLabel=pageLibrary_Forms&amp;propertyType=document&amp;id=HMCE_PROD1_026385" href="http://customs.hmrc.gov.uk/channelsPortalWebApp/channelsPortalWebApp.portal?_nfpb=true&amp;_pageLabel=pageLibrary_Forms&amp;propertyType=document&amp;id=HMCE_PROD1_026385" target="_blank" >VAT 1</a> : Application for registration.</li>
+
+        <li><a title="http://customs.hmrc.gov.uk/channelsPortalWebApp/channelsPortalWebApp.portal?_nfpb=true&amp;_pageLabel=pageLibrary_Forms&amp;propertyType=document&amp;id=HMCE_CL_000040" href="http://customs.hmrc.gov.uk/channelsPortalWebApp/channelsPortalWebApp.portal?_nfpb=true&amp;_pageLabel=pageLibrary_Forms&amp;propertyType=document&amp;id=HMCE_CL_000040"target="_blank"  >VAT 2</a> : Partnership details.</li>
+
+        <li><a title="http://customs.hmrc.gov.uk/channelsPortalWebApp/channelsPortalWebApp.portal?_nfpb=true&amp;_pageLabel=pageLibrary_Forms&amp;propertyType=document&amp;id=HMCE_PROD_010234" href="http://customs.hmrc.gov.uk/channelsPortalWebApp/channelsPortalWebApp.portal?_nfpb=true&amp;_pageLabel=pageLibrary_Forms&amp;propertyType=document&amp;id=HMCE_PROD_010234" target="_blank" >VAT 7</a> : Application to cancel your VAT registration.</li>
+
+        <li><a title="http://customs.hmrc.gov.uk/channelsPortalWebApp/channelsPortalWebApp.portal?_nfpb=true&amp;_pageLabel=pageLibrary_Forms&amp;propertyType=document&amp;id=HMCE_PROD_007371" href="http://customs.hmrc.gov.uk/channelsPortalWebApp/channelsPortalWebApp.portal?_nfpb=true&amp;_pageLabel=pageLibrary_Forms&amp;propertyType=document&amp;id=HMCE_PROD_007371" target="_blank" >VAT 68</a> : Request for transfer of a registration number.</li>
+
+        <li><a title="http://search2.hmrc.gov.uk/kbroker/hmrc/forms/start.jsp" href="http://search2.hmrc.gov.uk/kbroker/hmrc/forms/start.jsp" target="_blank" >More HM Revenue &amp; Customs forms</a> : Click here to access more HM Revenue &amp; Customs forms.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/AA01_change_of_accounting_reference_date.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/AA01_change_of_accounting_reference_date.pdf" target="_blank" >AA01</a> : Change of accounting reference date.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/AA02_post_october_dormant_company_accounts_dca.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/AA02_post_october_dormant_company_accounts_dca.pdf" target="_blank" >AA02</a> : Dormant Company Accounts (DCA).</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/AR01_annual_return.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/AR01_annual_return.pdf" target="_blank" >AR01</a> : Annual Return.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/AD02_notification_of_single_alternative_inspection_location_sail.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/AD02_notification_of_single_alternative_inspection_location_sail.pdf" target="_blank" >AD02</a> : Notification of single alternative inspection location (SAIL).</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/AD03_change_of_location_of_the_company_records_to_the_single_alternative_inspection_location.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/AD03_change_of_location_of_the_company_records_to_the_single_alternative_inspection_location.pdf" target="_blank" >AD03</a> : Change of location of the company records to the single alternative inspection location (SAIL).</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/AD04_change_of_location_of_the_company_records_to_the_registered_office.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/AD04_change_of_location_of_the_company_records_to_the_registered_office.pdf" target="_blank" >AD04</a> : Change of location of the company records to the registered office.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/AD01_change_of_registered_office_address.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/AD01_change_of_registered_office_address.pdf" target="_blank" >AD01</a> : Change of registered office address.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/AP01_appointment_of_director.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/AP01_appointment_of_director.pdf" target="_blank" >AP01</a> : Appointment of director.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/AP02_appointment_of_corporate_director.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/AP02_appointment_of_corporate_director.pdf"target="_blank"  >AP02</a> : Appointment of corporate director.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/AP03_appointment_of_secretary.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/AP03_appointment_of_secretary.pdf" target="_blank" >AP03</a> : Appointment of secretary.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/AP04_appointment_of_corporate_secretary.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/AP04_appointment_of_corporate_secretary.pdf" target="_blank" >AP04</a> : Appointment of corporate secretary.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/TM01_termination_of_appointment_of_director.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/TM01_termination_of_appointment_of_director.pdf" target="_blank" >TM01</a> : Termination of appointment of director.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/TM02_termination_of_appointment_of_secretary.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/TM02_termination_of_appointment_of_secretary.pdf" target="_blank" >TM02</a> : Termination of appointment of secretary.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/CH01_change_of_directors_details.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/CH01_change_of_directors_details.pdf" target="_blank" >CH01</a> : Change of director's details.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/CH02_change_of_corporate_director_details.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/CH02_change_of_corporate_director_details.pdf" target="_blank" >CH02</a> : Change of corporate director's details.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/CH03_change_of_secretarys_details.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/CH03_change_of_secretarys_details.pdf" target="_blank" >CH03</a> : Change of secretary's details.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/CH04_change_of_corporate_secretarys_details.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/CH04_change_of_corporate_secretarys_details.pdf" target="_blank" >CH04</a> : Change of corporate secretary's details.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/DS01_striking_off_application_by_a_company.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/DS01_striking_off_application_by_a_company.pdf" target="_blank" >DS01</a> : Striking off application by a company.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/DS02_withdrawal_of_striking_off_application_by_company.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/DS02_withdrawal_of_striking_off_application_by_company.pdf"target="_blank"  >DS02</a> : Withdrawal of striking off application by a company.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/IN01_application_to_register_a_company.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/IN01_application_to_register_a_company.pdf" target="_blank" >IN01</a> : Application to register a company.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/LQ01_notice_of_appointment_of_an_admistrative_receiver_receiver_or_manager.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/LQ01_notice_of_appointment_of_an_admistrative_receiver_receiver_or_manager.pdf" target="_blank" >LQ01</a> : Notice of appointment of an administrative receiver, receiver or manager.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/MG01_particulars_of_a_mortgage_or_charge.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/MG01_particulars_of_a_mortgage_or_charge.pdf" target="_blank" >MG01</a> : Particulars of a mortgage or charge.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/MG02_statement_of_satisfaction_in_full_or_in_part_of_mortgage_or_charge.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/MG02_statement_of_satisfaction_in_full_or_in_part_of_mortgage_or_charge.pdf" target="_blank" >MG02</a> : Statement of satisfaction in full or in part of mortgage or charge.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/generalForms/NewSpecialResolution.pdf" href="http://www.companieshouse.gov.uk/forms/generalForms/NewSpecialResolution.pdf" target="_blank" >Res CA2006</a> : Special resolution on change of name.</li>
+
+        <li><a title="http://www.companieshouse.gov.uk/forms/formsContinuation.shtml" href="http://www.companieshouse.gov.uk/forms/formsContinuation.shtml" target="_blank" >More Companies House forms</a> : Click here to access more Companies House forms.</li>
+      </ul>
     </p>
   </div>
 </div>
+
+
+</div>
+
+<!-- MODAL -->
+
+
+<div id="contactForm">
+  <div class="flex-modal">
+    <div class="contact-us-item-left">
+        <li >Berkeley Coach House</li>
+        <li >Limpley Stoke</li>
+        <li >Bath</li>
+        <li >Wiltshire</li>
+        <li >BA2 7FS</li>
+        <br>
+        <li >01225 722659</li>
+        <li >07768 011508</li>
+        <li ><a href="mailto:paulcharles@me.com?">paulcharles@me.com</a></li>
+    </div>
+    <div class="contact-us-item">
+      <p>Contact Us</p>
+      <div class="contact-form">
+        <form >
+          <div class="contact-form-group">
+            <input class="contact-form-control" placeholder="NAME">
+          </div>
+          <div class="contact-form-group">
+            <input class="contact-form-control" placeholder="EMAIL">
+          </div>
+          <div class="contact-form-group">
+            <input class="contact-form-control" placeholder="CONTACT NO">
+          </div>
+          <div class="contact-form-group message">
+            <input class="contact-form-control" placeholder="MESSAGE">
+          </div>
+          <div class="contact-form-group buttons">
+            <button class="contact-form-button" onclick="document.getElementById('contactForm').style.display='none'">CANCEL</button>
+            <button class="contact-form-button">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<!-- JAVASCRIPT -->
+
+
+<script>
+
+// NAVBAR MOVEMENTS
+
+var tabs = $('.tabs');
+var items = $('.tabs').find('a').length;
+var selector = $(".tabs").find(".selector");
+var activeItem = tabs.find('.active');
+var activeWidth = activeItem.innerWidth();
+$(".selector").css({
+  "left": activeItem.position.left + "px",
+  "width": activeWidth + "px"
+});
+
+$(".tabs").on("click","a",function(){
+  $('.tabs a').removeClass("active");
+  $(this).addClass('active');
+  var activeWidth = $(this).innerWidth();
+  var itemPos = $(this).position();
+  $(".selector").css({
+    "left":itemPos.left + "px",
+    "width": activeWidth + "px"
+  });
+});
+
+
+// CONTENTS OF TAB LOADS
+
+function openTab(tabsName) {
+    var i, tablinks;
+    var x = document.getElementsByClassName("tab");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+     }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace("active-tab", "");
+    }
+    document.getElementById(tabsName).style.display = "block";
+    evt.currentTarget.className += " active-tab";
+}
+
+// MODAL
+
+$(function() {
+
+  // contact form animations
+  $('#contact').click(function() {
+    $('#contactForm').fadeToggle();
+  })
+  $(document).mouseup(function (e) {
+    var container = $("#contactForm");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.fadeOut();
+    }
+  });
+
+});
+
+
+
+</script>
