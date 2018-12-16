@@ -21,11 +21,17 @@
   height: 80px;
   position:inline-block;
   min-width: 220px;
+
+}
+
+.tablink a {
+
 }
 
 .tablink:hover {
   color: $fawn;
   opacity: 2;
+  cursor: pointer;
 }
 .tabs a.active{
   color:#fff;
