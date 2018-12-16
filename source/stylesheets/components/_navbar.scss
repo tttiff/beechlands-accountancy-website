@@ -24,6 +24,12 @@
 
 }
 
+  @media only screen and (max-width: 600px) {
+  .tablink {
+    width: 100%;
+  }
+}
+
 .tablink a {
 
 }
@@ -38,6 +44,15 @@
   height: 80px;
 
  }
+
+  @media only screen and (max-width: 600px) {
+  a.tablink.active {
+    width: 100%;
+    color: white;
+    background-color: $logo;
+
+  }
+}
 
 .tabs{
   text-align: center;
@@ -103,6 +118,11 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
 }
 
+ @media only screen and (max-width: 600px) {
+  .tabs .selector {
+    display: none;
+  }
+}
 // .flex-container {
 //   display: flex;
 // }
