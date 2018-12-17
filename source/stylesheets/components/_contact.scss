@@ -76,6 +76,12 @@ h1{ margin: 0; }
 
 }
 
+ @media only screen and (max-width: 600px) {
+  .flex-modal{
+    margin: 0;
+    padding:0;
+  }
+}
 
 
 input, textarea {
@@ -111,12 +117,14 @@ textarea { height: 80px; resize: none; }
   padding: 30px;
   background-color: $fawn;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 40px;
+  flex: 1;
+  max-width: 350px;
 
 }
 
  @media only screen and (max-width: 600px) {
   .contact-us-item{
-    width: 300px;
+    width: 100% !important;
     padding: 20px !important;
     outline: 9999px solid rgba(0,0,0,0.7);
   }
